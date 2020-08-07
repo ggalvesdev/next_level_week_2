@@ -7,8 +7,9 @@ export default class ConnectionsController {
 
     const { total } = totalConnections[0];
 
-    return response.send(200).json({ total });
+    return response.status(200).json({ total });
   }
+
   async create(request: Request, response: Response) {
     const { user_id } = request.body;
 
