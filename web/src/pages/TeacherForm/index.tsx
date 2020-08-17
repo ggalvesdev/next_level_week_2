@@ -46,8 +46,8 @@ function TeacherForm() {
     }
 
     function handleCreateClass(e: FormEvent) {
-        e.preventDefault();
-
+        e.preventDefault(); 
+        
         api.post('classes', {
             name,
             avatar,
